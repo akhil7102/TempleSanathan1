@@ -159,7 +159,7 @@ export function Auth({ language, onNavigate, onAuthSuccess }: AuthProps) {
   return (
     <div className="min-h-screen flex flex-col" style={{ scrollBehavior: 'smooth' }}>
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b bg-card/90 backdrop-blur">
+      <div className="fixed top-[70px] left-0 right-0 z-40 flex items-center justify-between p-4 border-b bg-card/90 backdrop-blur">
         <Button
           variant="ghost"
           size="sm"
@@ -172,7 +172,7 @@ export function Auth({ language, onNavigate, onAuthSuccess }: AuthProps) {
       </div>
 
       {/* Content */}
-      <div className="flex-1 flex items-center justify-center p-4">
+      <div className="flex-1 flex items-center justify-center p-4 pt-[140px]">
         <Card className="w-full max-w-md bg-card/90 backdrop-blur border-primary/20">
           <CardHeader className="text-center space-y-4">
             <div className="w-16 h-16 mx-auto rounded-full overflow-hidden gradient-primary p-2">

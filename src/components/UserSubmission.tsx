@@ -346,7 +346,7 @@ export function UserSubmission({ language, onNavigate, isOffline }: UserSubmissi
   return (
     <div className="pb-20">
       {/* Header */}
-      <div className="sticky top-0 z-10 bg-card/90 backdrop-blur border-b p-4 flex items-center gap-3">
+      <div className="fixed top-[70px] left-0 right-0 z-40 bg-card/90 backdrop-blur border-b p-4 flex items-center gap-3">
         <Button
           variant="ghost"
           size="sm"
@@ -361,7 +361,7 @@ export function UserSubmission({ language, onNavigate, isOffline }: UserSubmissi
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="p-4 space-y-6">
+      <form onSubmit={handleSubmit} className="p-4 space-y-6 pt-[140px]">
         {/* Basic Information */}
         <Card className="bg-card/80 backdrop-blur border-primary/20">
           <CardHeader>

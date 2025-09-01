@@ -198,7 +198,7 @@ export function TempleProfile({
   return (
     <div className="pb-20" style={{ scrollBehavior: 'smooth' }}>
       {/* Header */}
-      <div className="sticky top-0 z-10 bg-white border-b p-4 flex items-center gap-3">
+      <div className="fixed top-[70px] left-0 right-0 z-40 bg-white border-b p-4 flex items-center gap-3">
         <Button
           variant="ghost"
           size="sm"
@@ -231,7 +231,7 @@ export function TempleProfile({
       </div>
 
       {/* Hero Image */}
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-48 overflow-hidden mt-[70px]">
         <ImageWithFallback
           src={`https://images.unsplash.com/1200x600/?temple,${temple.templeType},architecture`}
           alt={temple.name[language]}

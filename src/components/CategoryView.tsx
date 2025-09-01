@@ -122,7 +122,7 @@ export function CategoryView({
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-card/50 to-accent/20">
       {/* Header with Back Button */}
-      <div className="sticky top-0 z-10 bg-card/90 backdrop-blur border-b border-primary/20 p-4">
+      <div className="fixed top-[70px] left-0 right-0 z-40 bg-card/90 backdrop-blur border-b border-primary/20 p-4">
         <div className="flex items-center gap-3">
           <Button
             variant="ghost"
@@ -145,7 +145,7 @@ export function CategoryView({
       </div>
 
       {/* Content */}
-      <div className="p-4 space-y-6">
+      <div className="p-4 space-y-6 pt-[200px]">
         {filteredTemples.length > 0 ? (
           <>
             {/* Category Summary */}

@@ -94,7 +94,7 @@ export function PrivacyPolicy({ language, onNavigate }: PrivacyPolicyProps) {
   return (
     <div className="min-h-screen" style={{ scrollBehavior: 'smooth' }}>
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b bg-card/90 backdrop-blur">
+      <div className="fixed top-[70px] left-0 right-0 z-40 flex items-center justify-between p-4 border-b bg-card/90 backdrop-blur">
         <Button
           variant="ghost"
           size="sm"
@@ -109,7 +109,7 @@ export function PrivacyPolicy({ language, onNavigate }: PrivacyPolicyProps) {
       </div>
 
       {/* Content */}
-      <div className="p-4 space-y-6 pb-20">
+      <div className="p-4 space-y-6 pb-20 pt-[140px]">
         {/* Header */}
         <div className="text-center py-4">
           <Shield className="w-12 h-12 mx-auto mb-3 text-primary" />

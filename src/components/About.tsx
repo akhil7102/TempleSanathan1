@@ -61,7 +61,7 @@ export function About({ language, onNavigate }: AboutProps) {
   return (
     <div className="min-h-screen" style={{ scrollBehavior: 'smooth' }}>
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b bg-card/90 backdrop-blur">
+      <div className="fixed top-[70px] left-0 right-0 z-40 flex items-center justify-between p-4 border-b bg-card/90 backdrop-blur">
         <Button
           variant="ghost"
           size="sm"
@@ -76,7 +76,7 @@ export function About({ language, onNavigate }: AboutProps) {
       </div>
 
       {/* Content */}
-      <div className="p-4 space-y-6 pb-20">
+      <div className="p-4 space-y-6 pb-20 pt-[140px]">
         {/* Header with Logo */}
         <div className="text-center py-6">
           <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden gradient-primary p-3">

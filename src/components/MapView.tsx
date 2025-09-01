@@ -215,7 +215,7 @@ export function MapView({ language, onNavigate, temples, isOffline }: MapViewPro
   return (
     <div className="h-full flex flex-col" style={{ scrollBehavior: 'smooth' }}>
       {/* Header */}
-      <div className="p-4 border-b bg-card/90 backdrop-blur">
+      <div className="fixed top-[70px] left-0 right-0 z-40 p-4 border-b bg-card/90 backdrop-blur">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-lg font-semibold text-foreground">{t.title}</h2>
@@ -243,7 +243,7 @@ export function MapView({ language, onNavigate, temples, isOffline }: MapViewPro
       </div>
 
       {/* Map Container */}
-      <div className="flex-1 relative">
+      <div className="flex-1 relative mt-[70px]">
         {isOffline ? (
           <div className="w-full h-full flex items-center justify-center bg-muted/20">
             <div className="text-center p-6">

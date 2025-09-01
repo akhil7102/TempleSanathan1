@@ -347,13 +347,13 @@ export default function App() {
       )}
 
       {/* Name Bar (unpinned) */}
-      <div className="h-[70px] flex items-center justify-center p-4 border-b bg-card/90 backdrop-blur shadow-sm">
+      <div className="fixed top-0 left-0 right-0 z-50 h-[70px] flex items-center justify-center p-4 border-b bg-card/90 backdrop-blur shadow-sm">
         <h1 className="text-xl font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Temple Sanathan</h1>
       </div>
 
 
       {/* Main Content */}
-      <div ref={scrollRef} className="flex-1 overflow-auto pb-16">
+      <div ref={scrollRef} className="flex-1 overflow-auto pt-[70px] pb-16">
         {renderScreen()}
       </div>
 
